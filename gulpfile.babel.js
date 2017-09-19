@@ -3,7 +3,7 @@ import sass from 'gulp-sass'
 import autoprefixer from 'gulp-autoprefixer'
 
 const ruta = {
-    entrada: './sass/**/*.sass', //entrada
+    entrada: './sass/*.sass', //entrada
     salida: './' //salida
 }
 
