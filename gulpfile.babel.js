@@ -1,5 +1,6 @@
 import gulp from 'gulp'
 import sass from 'gulp-sass'
+import autoprefixer from 'gulp-autoprefixer'
 
 const ruta = {
     entrada: './sass/*.sass', //entrada
