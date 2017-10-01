@@ -1,10 +1,10 @@
 /*
- Theme Name: Mitema
+ Theme Name: Codey4k MD Theme
  Theme URI: http://www.esandra.com
  Description:
  Author
  Author URI:
- Version:
+ Version: 1.0
  */
 * {
   margin: 0;
@@ -12,5 +12,5 @@
   box-sizing: border-box; }
 
 body {
-  background: #E1F5FE;
+  background: #eee;
   font-family: Helvetica; }
