@@ -8,3 +8,11 @@
     </head>
     <body>
     
+    <!-- Menu bar-->
+        <div class="menu">
+            <div class="menu__container">
+                <h2>Logo</h2>
+                
+                <h2>icono</h2>
+            </div>
+        </div>
