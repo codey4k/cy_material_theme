@@ -7,12 +7,12 @@
         <?php wp_head() ?>
     </head>
     <body>
-    
+        <div class="wrap">
     <!-- Menu bar-->
-        <div class="menu">
-            <div class="menu__container">
-                <h2>Logo</h2>
+            <div class="menu">
+                <div class="menu__container">
+                    <h2>Logo</h2>
                 
-                <h2>icono</h2>
+                    <h2>icono</h2>
+                </div>
             </div>
-        </div>
