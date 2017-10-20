@@ -1,9 +1,9 @@
 /*
  Theme Name: Codey4k MD Theme
- Theme URI: http://www.esandra.com
- Description:
- Author
- Author URI:
+ Theme URI: https://github.com/codey4k/cy_material_theme
+ Description: First theme
+ Author : Y4k
+ Author URI: https://github.com/codey4k
  Version: 1.0
  */
 * {
@@ -19,9 +19,11 @@ body {
 .menu {
   width: 100%;
   height: 80px;
+  background: #fff;
   display: flex;
   box-shadow: 0 10px 15px rgba(85, 85, 85, 0.2);
-  z-index: 1000; }
+  z-index: 1000;
+  position: fixed; }
   .menu__container {
     margin: auto;
     width: 80%;
@@ -29,3 +31,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between; }
+
+.header {
+  width: 100%;
+  height: 500px;
+  background: #222; }
