@@ -42,6 +42,23 @@ body {
   .menu__logo {
     width: 70px;
     height: auto; }
+  .menu__icon {
+    width: 25px;
+    height: 1px;
+    background: #ccc;
+    position: relative; }
+    .menu__icon:before, .menu__icon:after {
+      content: "";
+      position: absolute;
+      right: 0;
+      background: inherit;
+      height: inherit; }
+    .menu__icon:before {
+      top: -7px;
+      width: 32px; }
+    .menu__icon:after {
+      top: 7px;
+      width: 28px; }
 
 .header {
   width: 100%;

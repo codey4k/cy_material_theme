@@ -11,9 +11,10 @@
     <!-- Menu bar-->
             <div class="menu">
                 <div class="menu__container">
-                    <img src=" <?php echo get_stylesheet_directory_uri()?>/images/y4k.png" alt="logo y4k" class="menu__logo">
+                    <img src="<?php echo get_stylesheet_directory_uri()?>/images/y4k.png" alt="logo y4k" class="menu__logo" />
                 
-                    <h2>icono</h2>
+                    <div class="menu__icon"></div>
+                    
                 </div>
             </div>
             
