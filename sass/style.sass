@@ -9,6 +9,8 @@
  Version: 1.0
  */
 
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400')
+
 *
     margin : 0
     padding : 0
@@ -17,7 +19,7 @@
     
 body
     background : #ECEFF1
-    font-family : Helvetica
+    font-family : 'Quicksand', Helvetica
    
 
 .wrap
@@ -53,13 +55,13 @@ body
         
 .header
     width : 100%
-    height : 500px
+    height : 400px
     position : relative
     background : url('./images/cow.jpeg'), #222
     background-size : cover
     background-repeat : no-repeat
     background-position : center center
-    
+    background-attachment : fixed
     display : flex
     
     &:before
@@ -71,22 +73,22 @@ body
     
     &__logo
         margin : auto
-        width : 50%
+        width : 45%
         height : auto
         z-index : 100
-    
-    
+        
+    //Commitear esta seccion
 .features
     width : 100%
-    height : 100px
+    height : auto
     background : #eee
     
     &__container
         margin : auto
         position : relative
         width : 80%
-        height : 250px
-        border-radius : 2px
+        height : auto
+        border-radius : 4px
         margin-top : -50px
         background : #eee
         z-index : 900
@@ -101,26 +103,39 @@ body
             content : ""
             position : absolute
             width : 20px
-            height : 130px
-            background : #555
+            height : 85%
+            background : rgba(#555, .5)
             top : 0
+            filter : blur(15px)
             z-index : -100
             
         &:before
             left : 0
+            transform : rotate(-12deg)
         &:after
             right : 0
+            transform : rotate(12deg)
+    
+    &__bg //se creo este div para cubrir las sobras paralelas
+        position : absolute
+        width : 100%
+        height : 100%
+        background : #eee
+        z-index : 900    
+        border-radius : 4px
     
     &__title,
     &__description
         padding : 1em
         text-align : center
-        
+        z-index : 901
         
     &__title
-        
+        padding-top :  2.5em //da mas espacio al titulo
         color : orange
         
     &__description
         color : #555
-        
+        padding : 
+            left : 2em
+            right : 2em
