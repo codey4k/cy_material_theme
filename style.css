@@ -24,7 +24,7 @@ body {
 .menu {
   width: 100%;
   height: 80px;
-  background: transparent;
+  background: rgba(34, 34, 34, 0.6);
   display: flex;
   box-shadow: 0 10px 15px rgba(85, 85, 85, 0.2);
   z-index: 1000;
@@ -136,6 +136,42 @@ body {
 
 .main {
   width: 100%;
-  height: 400px;
+  height: auto;
   position: relative;
-  background: orange; }
+  background: transparent; }
+  .main__container {
+    margin: auto;
+    width: 80%;
+    height: auto;
+    background: transparent; }
+
+.post {
+  width: 100%;
+  height: auto;
+  background: transparent; }
+  .post__img {
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(silver, gray); }
+  .post__title {
+    width: 100%;
+    margin: auto;
+    height: 0px;
+    position: relative;
+    background: #fff; }
+    .post__title h2 {
+      z-index: 100;
+      position: absolute;
+      line-height: 2em;
+      text-align: center;
+      left: 50%;
+      transform: translate(-50%, -80px); }
+  .post__content {
+    width: 100%;
+    height: auto;
+    background: #fff;
+    position: relative;
+    margin: auto; }
+    .post__content p {
+      padding: 2em;
+      text-align: center; }

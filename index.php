@@ -13,7 +13,15 @@
 
 
 <section class="main">
-    <?php echo "Hello"?>
+    <div class="main__container">
+        <article class="post">
+            <div class="post__img"></div>
+            <div class="post__title"><h2>Title</h2></div>
+            <div class="post__content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+        </article>
+    </div>
 </section>
 
 
