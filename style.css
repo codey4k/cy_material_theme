@@ -77,8 +77,10 @@ body {
     height: 100%;
     background: rgba(34, 34, 34, 0.75); }
   .header__logo {
+    position: relative;
     margin: auto;
-    width: 45%;
+    width: 40%;
+    min-width: 100px;
     height: auto;
     z-index: 100; }
 
