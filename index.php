@@ -11,4 +11,10 @@
     </div>
 </section>
 
+
+<section class="main">
+    <?php echo "Hello"?>
+</section>
+
+
 <?php get_footer()?>
