@@ -14,13 +14,29 @@
 
 <section class="main">
     <div class="main__container">
-        <article class="post">
-            <div class="post__img"></div>
-            <div class="post__title"><h2>Title</h2></div>
-            <div class="post__content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            </div>
-        </article>
+        <?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
+            <article class="post"> <!--wrap article-->
+                <!--post title-->
+                <div class="">
+                    <h2> 
+                        <a href="<?php the_excerpt(); ?>"><?php the_title(); ?></a>
+                    </h2>
+                </div>
+                
+                <?php
+                    echo get_the_post_thumbnail( 
+                        $post_id, 
+                        'thumbnail', 
+                        array('class'=>'post__thumbnail', 'alt'=> get_the_title() )
+                    );
+                ?>
+                
+                <div class="post__description">
+                    <p><?php the_excerpt(); ?></p>
+                </div>
+                
+            </article>
+        <?php endwhile; endif;?>
     </div>
 </section>
 
