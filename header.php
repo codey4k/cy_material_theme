@@ -9,7 +9,7 @@
     <body>
         <div class="wrap">
     <!-- Menu bar-->
-            <div class="menu">
+            <div class="menu" id="menu">
                 <div class="menu__container">
                     <a href="<?php home_url('/'); ?>">
                         <img src="<?php echo get_stylesheet_directory_uri()?>/images/y4k.png" alt="logo y4k" class="menu__logo" />
