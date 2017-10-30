@@ -17,22 +17,25 @@
         <?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
             <article class="post"> <!--wrap article-->
                 <!--post title-->
-                <div class="">
+
+                <figure>
+                    <?php
+                        echo get_the_post_thumbnail( 
+                            $post_id, 
+                            'thumbnail', 
+                            array('class'=>'post__thumbnail', 'alt'=> get_the_title() )
+                        );
+                    ?>
+                </figure>
+
+                <div class="post__title">
                     <h2> 
                         <a href="<?php the_excerpt(); ?>"><?php the_title(); ?></a>
                     </h2>
                 </div>
-                
-                <?php
-                    echo get_the_post_thumbnail( 
-                        $post_id, 
-                        'thumbnail', 
-                        array('class'=>'post__thumbnail', 'alt'=> get_the_title() )
-                    );
-                ?>
-                
-                <div class="post__description">
-                    <p><?php the_excerpt(); ?></p>
+
+                <div class="post__excerpt">
+                    <?php the_excerpt(); ?>
                 </div>
                 
             </article>

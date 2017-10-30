@@ -17,6 +17,18 @@
     //hook
     add_action('wp_enqueue_scripts', 'styles');
     
+    //personalizando funcion the_excerpt()
+    function custom_excerpt_length($length) {
+        return 20;
+    }
+    add_filter('excerpt_length', 'custom_excerpt_length');
+    
+    //funcion para configurara el final de el extracto
+    function excerpt_final($more) {
+        return '...';
+    }
+    add_filter('excerpt_more', 'excerpt_final');
+    
     function custom_theme(){
         add_theme_support('post-thumbnails');
     }
