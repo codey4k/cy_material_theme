@@ -19,6 +19,3 @@
                 </div>
             </div>
             
-            <header class="header">
-                <img src="<?php echo get_stylesheet_directory_uri()?>/images/codey4klogogrande.png" alt="logo" class="header__logo"/>
-            </header>
