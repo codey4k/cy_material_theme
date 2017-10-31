@@ -33,9 +33,9 @@
                 </figure>
 
                 <div class="post__title">
-                    <h2> 
-                        <a href="<?php the_excerpt(); ?>"><?php the_title(); ?></a>
-                    </h2>
+                    <a href="<?php echo get_permalink(); ?>"> 
+                        <h2><?php the_title(); ?></h2>
+                    </a>
                 </div>
 
                 <div class="post__excerpt">

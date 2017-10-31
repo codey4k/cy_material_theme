@@ -11,7 +11,7 @@
     <!-- Menu bar-->
             <div class="menu" id="menu">
                 <div class="menu__container">
-                    <a href="<?php home_url('/'); ?>">
+                    <a href="<?php echo home_url('/'); ?>">
                         <img src="<?php echo get_stylesheet_directory_uri()?>/images/y4k.png" alt="logo y4k" class="menu__logo" />
                     </a>
                     <div class="menu__icon"></div>
