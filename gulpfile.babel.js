@@ -10,6 +10,7 @@ const ruta = {
 gulp.task('style',() => {
     gulp.src( ruta.entrada )
         .pipe(sass())
+        .pipe(autoprefixer())
         .pipe(gulp.dest( ruta.salida ))
 })
 
