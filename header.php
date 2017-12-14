@@ -7,6 +7,7 @@
         <?php wp_head() ?>
     </head>
     <body>
+        <div class="fab"></div>
         <div class="wrap">
     <!-- Menu bar-->
             <div class="menu" id="menu">
