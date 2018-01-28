@@ -16,6 +16,11 @@
     padding : 0
     transition : all .6s
     box-sizing : border-box
+
+ul,
+ol,
+li
+    list-style : none
     
 body
     background : #ECEFF1
@@ -84,6 +89,15 @@ body
         &:after
             top : 7px
             width : 28px
+        @media screen and (min-width : 600px)
+            display : none
+    &__nav
+        display : none
+        @media screen and (min-width : 600px)
+            display : inline-flex
+    &__item
+        color : #bbb
+        padding : .6em
         
 .header
     width : 100%

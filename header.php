@@ -17,6 +17,11 @@
                     </a>
                     <div class="menu__icon"></div>
                     
+                    <ul class="menu__nav">
+                        <li class="menu__item">Home</li>
+                        <li class="menu__item">Article</li>
+                        <li class="menu__item">Downloads</li>
+                    <ul>
                 </div>
             </div>
             
