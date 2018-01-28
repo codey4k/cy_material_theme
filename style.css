@@ -20,6 +20,12 @@ ol,
 li {
   list-style: none; }
 
+div,
+img,
+main,
+section {
+  display: block; }
+
 body {
   background: #ECEFF1;
   font-family: 'Quicksand', Helvetica; }
