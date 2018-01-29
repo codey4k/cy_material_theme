@@ -38,4 +38,9 @@
     
     //desactivar barra admin
     add_filter( 'show_admin_bar', '__return_false' );
-?>
+
+    //Registrar nuevo menu
+    
+    register_nav_menus(array(
+        'Main menu' => __('Main menu', 'CodeY4k')
+    ));
