@@ -115,6 +115,21 @@ body
     &__item
         color : #bbb
         padding : .6em
+    &__item:nth-child(2)
+        position : relative
+        &::before
+            content : "0"
+            color : #fff
+            position : absolute
+            top : -1px
+            right : -1px
+            padding :
+                left : 5px
+                right : 5px
+            transform-origin : center
+            background :
+                color : orange
+            border-radius : 50%
         
 .header
     width : 100%

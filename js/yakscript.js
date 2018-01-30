@@ -17,3 +17,11 @@ window.addEventListener('scroll',function(){
     }
     
 })
+
+let article = document.getElementsByClassName('menu__item')
+
+// for(let i = 0; i < article.length; i++) {
+//     if(article[i].innerHTML === 'Article'){
+//         article[i].style.color = "orange"
+//     }
+// }
