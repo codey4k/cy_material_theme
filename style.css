@@ -45,14 +45,13 @@ body {
   body::-webkit-scrollbar-thumb {
     background: #333; }
 
-.fab {
-  width: 60px;
-  height: 60px;
+.fab-container {
+  width: 200px;
+  height: 200px;
   position: fixed;
-  right: 20px;
-  bottom: 20px;
-  border-radius: 50%;
-  background: orange;
+  right: -20px;
+  bottom: -30px;
+  outline: 1px solid lightgreen;
   z-index: 4000; }
 
 .wrap {
@@ -126,7 +125,7 @@ body {
       padding-right: 5px;
       -webkit-transform-origin: center;
               transform-origin: center;
-      background-color: orange;
+      background-color: red;
       border-radius: 50%; }
 
 .header {
@@ -210,7 +209,7 @@ body {
     z-index: 901; }
   .features__title {
     padding-top: 2.5em;
-    color: orange; }
+    color: red; }
   .features__description {
     color: #555;
     padding-left: 2em;
