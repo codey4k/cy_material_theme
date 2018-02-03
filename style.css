@@ -45,14 +45,22 @@ body {
   body::-webkit-scrollbar-thumb {
     background: #333; }
 
-.fab-container {
-  width: 250px;
-  height: 250px;
+.fab {
+  width: 300px;
+  height: 300px;
   position: fixed;
   right: 0px;
   bottom: 0px;
   outline: 1px solid lightgreen;
   z-index: 4000; }
+  .fab__back {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: #fdad1b;
+    border-radius: 50%;
+    right: -13rem;
+    bottom: -13rem; }
 
 .wrap {
   width: 100%;

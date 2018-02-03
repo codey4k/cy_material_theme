@@ -34,6 +34,7 @@ ul,
 ol,
 li
     list-style : none
+    
 nav,    
 div,
 img,
@@ -58,9 +59,9 @@ body
     &::-webkit-scrollbar-thumb
         background : #333
    
-.fab-container
-    width : 250px
-    height : 250px
+.fab
+    width : 300px
+    height : 300px
     position : fixed
     right : 0px
     bottom : 0px
@@ -68,6 +69,14 @@ body
     // border-radius : 50%
     // background : orange
     z-index : 4000
+    &__back
+        position : absolute
+        width : 500px
+        height : 500px
+        background : $color1
+        border-radius : 50%
+        right : -13rem
+        bottom : -13rem
 
 
 .wrap
