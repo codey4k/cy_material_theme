@@ -51,13 +51,13 @@ body {
   position: fixed;
   right: 0px;
   bottom: 0px;
-  outline: 1px solid lightgreen;
   z-index: 4000; }
   .fab__back {
     position: absolute;
+    display: none;
     width: 500px;
     height: 500px;
-    background: #fdad1b;
+    background: orange;
     border-radius: 50%;
     right: -13rem;
     bottom: -14rem; }
@@ -65,7 +65,7 @@ body {
     position: absolute;
     width: 200px;
     height: 200px;
-    background: green;
+    background: orange;
     right: -5.4rem;
     bottom: -5.4rem;
     border-radius: 50%; }
@@ -141,7 +141,7 @@ body {
       padding-right: 5px;
       -webkit-transform-origin: center;
               transform-origin: center;
-      background-color: #fdad1b;
+      background-color: orange;
       border-radius: 50%; }
 
 .header {
@@ -225,7 +225,7 @@ body {
     z-index: 901; }
   .features__title {
     padding-top: 2.5em;
-    color: #fdad1b; }
+    color: orange; }
   .features__description {
     color: #555;
     padding-left: 2em;

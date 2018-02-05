@@ -10,7 +10,7 @@
  */
 
 //---------- variables -------------
-$color1 : #fdad1b
+$color1 : orange
 
 $color2 : #444 
 
@@ -65,12 +65,13 @@ body
     position : fixed
     right : 0px
     bottom : 0px
-    outline : 1px solid lightgreen
+    // outline : 1px solid lightgreen
     // border-radius : 50%
     // background : orange
     z-index : 4000
     &__back
         position : absolute
+        display : none
         width : 500px
         height : 500px
         background : $color1
@@ -81,7 +82,7 @@ body
         position : absolute
         width : 200px
         height : 200px
-        background : green
+        background : $color1
         right : -5.4rem
         bottom : -5.4rem
         border-radius : 50%
