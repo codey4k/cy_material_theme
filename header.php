@@ -9,6 +9,7 @@
     <body>
         <div class="fab">
             <div class="fab__back"></div>
+            <div class="fab__button"></div>
         </div>
         <div class="wrap">
     <!-- Menu bar-->
