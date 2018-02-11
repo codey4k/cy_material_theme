@@ -10,6 +10,7 @@
 * {
   margin: 0;
   padding: 0;
+  border: none;
   outline: none;
   -webkit-transition: all .6s;
   transition: all .6s;
@@ -34,7 +35,8 @@ article {
   display: block; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  background: transparent; }
 
 /*-------------------------*/
 body {
@@ -128,7 +130,8 @@ body {
         display: inline-flex; } }
   .menu__item {
     color: #bbb;
-    padding: .6em; }
+    padding: .6em;
+    cursor: pointer; }
   .menu__item:nth-child(2) {
     position: relative; }
     .menu__item:nth-child(2)::before {

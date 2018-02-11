@@ -25,6 +25,7 @@ $color4 : #ccc // algunos titulos o enlaces
 *
     margin : 0
     padding : 0
+    border : none
     outline : none
     transition : all .6s
     box-sizing : border-box
@@ -48,9 +49,10 @@ article,
     
 a
     text-decoration : none
-
+    background : transparent
 /*-------------------------*/
-    
+
+
 body
     background : #ECEFF1
     font-family : 'Quicksand', Helvetica
@@ -82,7 +84,7 @@ body
         position : absolute
         width : 200px
         height : 200px
-        background : $color1
+        background : orange
         right : -5.4rem
         bottom : -5.4rem
         border-radius : 50%
@@ -144,6 +146,8 @@ body
     &__item
         color : #bbb
         padding : .6em
+        cursor : pointer
+        
     &__item:nth-child(2)
         position : relative
         &::before
