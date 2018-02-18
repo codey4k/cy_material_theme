@@ -39,6 +39,13 @@ a {
   background: transparent; }
 
 /*-------------------------*/
+*::-moz-selection {
+  color: #bbb;
+  background: #333; }
+*::selection {
+  color: #bbb;
+  background: #333; }
+
 body {
   background: #ECEFF1;
   font-family: 'Quicksand', Helvetica; }
