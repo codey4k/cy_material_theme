@@ -23,7 +23,7 @@
                     <ul class="menu__nav">
                         <li class="menu__item">Home</li>
                         <li class="menu__item">Articles</li>
-                        <li class="menu__item">Downloads</li>
+                        <li class="menu__item">Contact</li>
                     <ul>
                 </div>
             </div>
