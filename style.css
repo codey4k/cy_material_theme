@@ -6,7 +6,15 @@
  Author URI: https://github.com/codey4k
  Version: 1.0
  */
+/* ---------- Variales ---------- */
 @import url("https://fonts.googleapis.com/css?family=Quicksand:300,400");
+:root {
+  --primaryColor: orange;
+  --secondaryColor: #444;
+  --color3: #eee;
+  --color4: #ccc; }
+
+/* ------------------------------ */
 * {
   margin: 0;
   padding: 0;
@@ -41,10 +49,10 @@ a {
 /*-------------------------*/
 *::-moz-selection {
   color: #bbb;
-  background: #333; }
+  background: var(--secondaryColor); }
 *::selection {
   color: #bbb;
-  background: #333; }
+  background: var(--secondaryColor); }
 
 body {
   background: #ECEFF1;
@@ -66,7 +74,7 @@ body {
     display: none;
     width: 500px;
     height: 500px;
-    background: orange;
+    background: var(--primaryColor);
     border-radius: 50%;
     right: -13rem;
     bottom: -14rem; }
@@ -74,7 +82,7 @@ body {
     position: absolute;
     width: 200px;
     height: 200px;
-    background: orange;
+    background: var(--primaryColor);
     right: -5.4rem;
     bottom: -5.4rem;
     border-radius: 50%; }
@@ -151,7 +159,7 @@ body {
       padding-right: 5px;
       -webkit-transform-origin: center;
               transform-origin: center;
-      background-color: orange;
+      background-color: var(--primaryColor);
       border-radius: 50%; }
 
 .header {
@@ -235,7 +243,7 @@ body {
     z-index: 901; }
   .features__title {
     padding-top: 2.5em;
-    color: orange; }
+    color: var(--primaryColor); }
   .features__description {
     color: #555;
     padding-left: 2em;
@@ -319,7 +327,7 @@ body {
 .footer {
   width: 100%;
   height: 300px;
-  background: #444; }
+  background: var(--secondaryColor); }
   .footer__container {
     margin: 0 auto;
     width: 80%;
