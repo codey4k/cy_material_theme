@@ -186,69 +186,28 @@ body {
     width: 40%;
     min-width: 100px;
     height: auto;
-    z-index: 100; }
+    z-index: 100;
+    opacity: 0;
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+    -webkit-animation-name: codey4k;
+            animation-name: codey4k;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards; }
 
-.features {
-  width: 100%;
-  height: auto;
-  background: #eee; }
-  .features__container {
-    margin: auto;
-    position: relative;
-    width: 80%;
-    height: auto;
-    border-radius: 4px;
-    margin-top: -50px;
-    background: #eee;
-    z-index: 900;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    align-irems: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; }
-    .features__container:before, .features__container:after {
-      content: "";
-      position: absolute;
-      width: 20px;
-      height: 80%;
-      background: rgba(85, 85, 85, 0.5);
-      top: 0;
-      -webkit-filter: blur(15px);
-              filter: blur(15px);
-      z-index: -100; }
-    .features__container:before {
-      left: 0;
-      -webkit-transform: rotate(-12deg);
-              transform: rotate(-12deg); }
-    .features__container:after {
-      right: 0;
-      -webkit-transform: rotate(12deg);
-              transform: rotate(12deg); }
-  .features__bg {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #eee;
-    z-index: 900;
-    border-radius: 4px; }
-  .features__title, .features__description {
-    padding: 1em;
-    text-align: center;
-    z-index: 901; }
-  .features__title {
-    padding-top: 2.5em;
-    color: var(--primaryColor); }
-  .features__description {
-    color: #555;
-    padding-left: 2em;
-    padding-right: 2em;
-    padding-bottom: 4em; }
+@-webkit-keyframes codey4k {
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%); } }
+
+@keyframes codey4k {
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%); } }
 
 .main {
   width: 100%;
@@ -259,11 +218,15 @@ body {
     margin: auto;
     width: 80%;
     height: auto;
-    background: transparent; }
+    background: #fff;
+    margin-top: -50px; }
 
 .post {
   width: 100%;
   height: auto; }
+  .post__thumbnail {
+    width: 100%;
+    height: 80vh; }
   .post__header {
     width: 100%;
     height: 350px;

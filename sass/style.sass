@@ -193,70 +193,83 @@ body
         max-width 500px
         height : auto
         z-index : 100
+        opacity : 0
+        transform : translateY(50%)
+        // transition-timing-function : cubic-bezier(0,1.56,.99,-0.43)
         
+        animation-name : codey4k
+        animation-duration : 3s
+        animation-fill-mode : forwards
+        
+        
+        @keyframes codey4k
+            to
+                opacity : 1
+                transform : translateY(0%)
+                
     //Commitear esta seccion
-.features
-    width : 100%
-    height : auto
-    background : #eee
+// .features
+//     width : 100%
+//     height : auto
+//     background : #eee
     
-    &__container
-        margin : auto
-        position : relative
-        width : 80%
-        height : auto
-        border-radius : 4px
-        margin-top : -50px
-        background : #eee
-        z-index : 900
+//     &__container
+//         margin : auto
+//         position : relative
+//         width : 80%
+//         height : auto
+//         border-radius : 4px
+//         margin-top : -50px
+//         background : #eee
+//         z-index : 900
         
-        display : flex
-        align-irems : center
-        justify-content : center
-        flex-direction : column
+//         display : flex
+//         align-irems : center
+//         justify-content : center
+//         flex-direction : column
         
-        &:before,
-        &:after
-            content : ""
-            position : absolute
-            width : 20px
-            height : 80%
-            background : rgba(#555, .5)
-            top : 0
-            filter : blur(15px)
-            z-index : -100
+//         &:before,
+//         &:after
+//             content : ""
+//             position : absolute
+//             width : 20px
+//             height : 80%
+//             background : rgba(#555, .5)
+//             top : 0
+//             filter : blur(15px)
+//             z-index : -100
             
-        &:before
-            left : 0
-            transform : rotate(-12deg)
-        &:after
-            right : 0
-            transform : rotate(12deg)
+//         &:before
+//             left : 0
+//             transform : rotate(-12deg)
+//         &:after
+//             right : 0
+//             transform : rotate(12deg)
     
-    &__bg //se creo este div para cubrir las sobras paralelas
-        position : absolute
-        width : 100%
-        height : 100%
-        background : #eee
-        z-index : 900    
-        border-radius : 4px
+//     &__bg //se creo este div para cubrir las sobras paralelas
+//         position : absolute
+//         width : 100%
+//         height : 100%
+//         background : #eee
+//         z-index : 900    
+//         border-radius : 4px
     
-    &__title,
-    &__description
-        padding : 1em
-        text-align : center
-        z-index : 901
+//     &__title,
+//     &__description
+//         padding : 1em
+//         text-align : center
+//         z-index : 901
         
-    &__title
-        padding-top :  2.5em //da mas espacio al titulo
-        color : var(--primaryColor)
+//     &__title
+//         padding-top :  2.5em //da mas espacio al titulo
+//         color : var(--primaryColor)
         
-    &__description
-        color : #555
-        padding : 
-            left : 2em
-            right : 2em
-            bottom : 4em
+//     &__description
+//         color : #555
+//         padding : 
+//             left : 2em
+//             right : 2em
+//             bottom : 4em
             
             
 .main
@@ -269,13 +282,17 @@ body
         margin : auto
         width : 80%
         height : auto
-        background : transparent
+        background : #fff
+        margin-top : -50px
     
 
 .post
     width : 100%
     height : auto
     // background : orange
+    &__thumbnail
+        width : 100%
+        height : 80vh
 
     &__header
         width : 100%
